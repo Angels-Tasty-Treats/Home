@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        /* Color Scheme from Angels Tasty Treats */
+        :root {
+            --primary-color: #f869aa; /* pink */
+            --secondary-color: #fff3f7; /* light pink background */
+            --accent-color: #ffb347; /* orange/yellow accent */
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        img.logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0 20px 0;
+        }
+
+        a {
+            font-size: 1.1em;
+            color: var(--primary-color);
+            text-decoration: none;
+            border: 2px solid var(--primary-color);
+            padding: 10px 25px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="logo.png" alt="Angels Tasty Treats Logo" class="logo">
+
+    <!-- 404 Message -->
+    <h1>Oops! Page Not Found</h1>
+    <p>Looks like you've wandered off the sweet path. Don't worry, there are plenty of treats waiting for you!</p>
+
+    <!-- Navigation Buttons -->
+    <a href="index.html">Home</a>
+    <a href="Treats.html">Our Treats</a>
+    <a href="mailto:email@domain.tld">Contact Us</a>
+</body>
+</html>
