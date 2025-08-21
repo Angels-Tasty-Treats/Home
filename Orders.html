@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Place Your Order</title>
+<style>
+    /* Color scheme from Angels Tasty Treats */
+    :root {
+        --primary-color: #f869aa; /* pink */
+        --secondary-color: #fff3f7; /* light pink background */
+        --accent-color: #ffb347; /* orange accent */
+        --text-color: #333;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    img.logo {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    form {
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 80px;
+    }
+
+    button {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-top: 10px;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: var(--accent-color);
+    }
+
+    @media (max-width: 600px) {
+        form { padding: 20px; }
+    }
+</style>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="Logo.png" alt="Angels Tasty Treats Logo" class="logo">
+
+    <h1>Place Your Order</h1>
+
+    <!-- Formspree Form -->
+    <form action="https://formspree.io/f/manbgkqa" method="POST">
+        <label>
+            Your Name:
+            <input type="text" name="name" required>
+        </label>
+
+        <label>
+            Your Email:
+            <input type="email" name="email" required>
+        </label>
+
+        <label>
+            Phone Number:
+            <input type="tel" name="phone" required>
+        </label>
+
+        <label>
+            Your Order:
+            <textarea name="order" placeholder="e.g., 2 Red Velvet Cookies, 1 Brownie" required></textarea>
+        </label>
+
+        <label>
+            Additional Notes:
+            <textarea name="message" placeholder="Any special requests?"></textarea>
+        </label>
+
+        <button type="submit">Send Order</button>
+    </form>
+</body>
+</html>
