@@ -245,7 +245,7 @@
     <div class="hero-text">
       <h2>Delight in Every Bite</h2>
       <p>Handcrafted pastries and sweets made with love and the finest ingredients.</p>
-      <button href="orders.html" class="btn-primary">Order Now</button>
+      <button Id="btn-primary" class="btn-primary">Order Now</button>
     </div>
     <div class="hero-image">
       <img src="Logo.png" />
@@ -305,6 +305,11 @@
     }
     window.addEventListener('scroll', revealOnScroll);
     window.addEventListener('load', revealOnScroll);
+   
+   document.getElementById("btn-primary").addEventListener("click", function() {
+    // Replace the URL below with your desired destination
+    window.location.href = "Orders.html";
+});
   </script>
 </body>
 </html>
